@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deal Beacon — Black Friday 2026 Deal Finder</title>
+<meta name="description" content="38 real Black Friday deals checked 27 Nov 2026 across Amazon, Best Buy, Target and Walmart, each with an honest verdict.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">◆</span>
+      <div>
+        <h1>Deal Beacon</h1>
+        <p class="tagline">Black Friday 2026 — real deals, checked today, verdicts included</p>
+      </div>
+    </div>
+    <dl class="stats" id="stats"></dl>
+  </div>
+</header>
+
+<main id="app" aria-live="polite">
+  <section class="controls" id="controls">
+    <label class="search-box">
+      <span class="visually-hidden">Search deals</span>
+      <input type="search" id="search" placeholder="Search a product, brand or store…" autocomplete="off">
+    </label>
+    <div class="chip-row" id="category-chips" role="group" aria-label="Filter by category"></div>
+    <div class="select-row">
+      <label>Store
+        <select id="store-filter">
+          <option value="">All stores</option>
+        </select>
+      </label>
+      <label>Discount
+        <select id="discount-filter">
+          <option value="0">Any discount</option>
+          <option value="25">25% off or more</option>
+          <option value="40">40% off or more</option>
+          <option value="50">50% off or more</option>
+        </select>
+      </label>
+      <label>Sort
+        <select id="sort">
+          <option value="discount">Biggest % off first</option>
+          <option value="saving">Biggest $ saving first</option>
+          <option value="price">Lowest price first</option>
+          <option value="name">Name A–Z</option>
+        </select>
+      </label>
+    </div>
+    <p class="result-line" id="result-line"></p>
+  </section>
+  <section class="grid" id="grid"></section>
+  <section class="detail" id="detail" hidden></section>
+</main>
+
+<footer class="colophon">
+  <p><strong>How these prices were checked.</strong> Every deal on this page was found and checked by the site's maker on 27 Nov 2026, reading the price at the store or in a deals source that names the store. Each card names its source and its check date. Prices change fast in Black Friday week — always confirm the price at the store before you buy.</p>
+  <p>Deal Beacon is an independent finder. Store names belong to their owners; links go to the store's own listing or search for the product. No prices are fetched from anywhere at run time: the deals live in this site's own files.</p>
+</footer>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
